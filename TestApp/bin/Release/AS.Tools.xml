@@ -1,0 +1,226 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>AS.Tools</name>
+    </assembly>
+    <members>
+        <member name="T:AS.Tools.SeleniumHelper.DriverHelper">
+            <summary>
+            Driver helper for selenium fast code
+            </summary>
+        </member>
+        <member name="M:AS.Tools.SeleniumHelper.DriverHelper.#ctor(OpenQA.Selenium.IWebDriver)">
+            <summary>
+            Init with IWebdriver. You can init by static method: DriverHelper.InitChromeDriver or InitFirefoxDriver
+            </summary>
+            <param name="driver"></param>
+        </member>
+        <member name="M:AS.Tools.SeleniumHelper.DriverHelper.GoToUrl(System.String)">
+            <summary>
+            Go to url util success
+            </summary>
+            <param name="url"></param>
+        </member>
+        <member name="M:AS.Tools.SeleniumHelper.DriverHelper.WaitElementByXpath(System.String,System.Int32)">
+            <summary>
+            Wait thread util the element appears
+            </summary>
+            <param name="xpath"></param>
+            <param name="timeOut"></param>
+            <returns>Return true if success, false if time-out</returns>
+        </member>
+        <member name="M:AS.Tools.SeleniumHelper.DriverHelper.HasElement(System.Collections.Generic.List{System.String},System.Int32)">
+            <summary>
+            Check one of the XPaths list appears
+            </summary>
+            <param name="elementsXpath"></param>
+            <param name="timeOut"></param>
+            <returns>Return index of xpath list if success, -1 if time out</returns>
+        </member>
+        <member name="M:AS.Tools.SeleniumHelper.DriverHelper.ScrollToElement(OpenQA.Selenium.IWebElement,System.Int32)">
+            <summary>
+            Scroll to Element
+            </summary>
+            <param name="element"></param>
+            <param name="offset"></param>
+        </member>
+        <member name="M:AS.Tools.SeleniumHelper.DriverHelper.ScrollToBottom">
+            <summary>
+            Scroll smooth to bottom
+            </summary>
+        </member>
+        <member name="M:AS.Tools.SeleniumHelper.DriverHelper.ScrollToPosition(System.Int32)">
+            <summary>
+            Scroll to Y pos
+            </summary>
+            <param name="y"></param>
+        </member>
+        <member name="M:AS.Tools.SeleniumHelper.DriverHelper.OpenNewTab(System.String,System.Boolean)">
+            <summary>
+            Open a new tab
+            </summary>
+            <param name="url"></param>
+            <param name="isSwitchToNewTab"></param>
+        </member>
+        <member name="M:AS.Tools.SeleniumHelper.DriverHelper.CloseCurrentTab">
+            <summary>
+            Close current tab
+            </summary>
+        </member>
+        <member name="M:AS.Tools.SeleniumHelper.DriverHelper.ClickByJs(OpenQA.Selenium.IWebElement)">
+            <summary>
+            Click to Element by Javascript. Sometime, chrome cannot click by default
+            </summary>
+            <param name="element"></param>
+        </member>
+        <member name="M:AS.Tools.SeleniumHelper.DriverHelper.InitChromeDriver(AS.Tools.SeleniumHelper.InitOptions,System.String@)">
+            <summary>
+            Init chrome session
+            </summary>
+            <param name="initOptions"></param>
+            <param name="msg"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AS.Tools.SeleniumHelper.DriverHelper.InitFirefoxDriver(System.String,System.String@)">
+            <summary>
+            Init firefox driver. Return null if init fail
+            </summary>
+            <param name="profilePath"></param>
+            <param name="msg"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AS.Tools.SeleniumHelper.DriverHelper.CloseAllChrome">
+            <summary>
+            Close all chrome process
+            </summary>
+        </member>
+        <member name="M:AS.Tools.SeleniumHelper.DriverHelper.CloseAllFirefox">
+            <summary>
+            Close all firefox process
+            </summary>
+        </member>
+        <member name="T:AS.Tools.SeleniumHelper.InitOptions">
+            <summary>
+            Simple init option (Support Chrome | Firefox)
+            </summary>
+        </member>
+        <member name="P:AS.Tools.SeleniumHelper.InitOptions.ProfileDirectory">
+            <summary>
+            Profile directory
+            </summary>
+        </member>
+        <member name="P:AS.Tools.SeleniumHelper.InitOptions.UserDataDir">
+            <summary>
+            User data dir name
+            </summary>
+        </member>
+        <member name="P:AS.Tools.SeleniumHelper.InitOptions.BinaryLocation">
+            <summary>
+            Binary location (to chrome.exe or firefox.exe). If null, use default
+            </summary>
+        </member>
+        <member name="P:AS.Tools.SeleniumHelper.InitOptions.Headless">
+            <summary>
+            Use headless
+            </summary>
+        </member>
+        <member name="P:AS.Tools.SeleniumHelper.InitOptions.IsLoadImage">
+            <summary>
+            Load image
+            </summary>
+        </member>
+        <member name="P:AS.Tools.SeleniumHelper.InitOptions.WinPosX">
+            <summary>
+            Window position X
+            </summary>
+        </member>
+        <member name="P:AS.Tools.SeleniumHelper.InitOptions.WinPosY">
+            <summary>
+            Window position Y
+            </summary>
+        </member>
+        <member name="M:AS.Tools.SeleniumHelper.InitOptions.#ctor">
+            <summary>
+            Init default value
+            </summary>
+        </member>
+        <member name="M:AS.Tools.SeleniumHelper.InitOptions.ToChromeOptions">
+            <summary>
+            Parse to chrome option
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:AS.Tools.StrHelper">
+            <summary>
+            Helper for string
+            </summary>
+        </member>
+        <member name="M:AS.Tools.StrHelper.GetAllowedFileName(System.String)">
+            <summary>
+            Get allowed file name
+            </summary>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AS.Tools.StrHelper.RandomString(System.Int32)">
+            <summary>
+            Make a random string includes a-z,A-Z,0-9
+            </summary>
+            <param name="lengh"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AS.Tools.StrHelper.ParseList``1(System.String,System.Char)">
+            <summary>
+            Convert a Text to List
+            </summary>
+            <param name="text">Eg: tag 1, tag 2, tag 3</param>
+            <param name="separator">Separtor character. Normaly: ','</param>
+            <returns></returns>
+        </member>
+        <member name="M:AS.Tools.StrHelper.IntDetect(System.String)">
+            <summary>
+            Detect the first number > 0 of a string. Return null if not detected
+            </summary>
+            <param name="text"></param>
+            <returns></returns>
+        </member>
+        <member name="T:AS.Tools.SystemInfo">
+            <summary>
+            System info
+            </summary>
+        </member>
+        <member name="M:AS.Tools.SystemInfo.GetCpuID">
+            <summary>
+            Get CPU ID
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:AS.Tools.UrlHelper">
+            <summary>
+            Helper for URL
+            </summary>
+        </member>
+        <member name="M:AS.Tools.UrlHelper.GetDoamin(System.String)">
+            <summary>
+            Get domain from a url. Return eg: http://codethuegiare.com
+            </summary>
+            <param name="url">Eg: https://giaiphapmmo.net/download?active_key=ABC</param>
+            <returns></returns>
+        </member>
+        <member name="M:AS.Tools.UrlHelper.GetSlug(System.String)">
+            <summary>
+            Get slug from url. Eg: https://abc.com/products/duy-dep-trai/?action=true => duy-dep-trai
+            </summary>
+            <param name="url"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AS.Tools.UrlHelper.MakeSlug(System.String,System.Boolean)">
+            <summary>
+            Make slug from a title. Eg: Duy Dep Trai => duy-dep-trai
+            </summary>
+            <param name="title"></param>
+            <param name="addRandomNumber">If true, add a random number to last result (1000 to 10000)</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

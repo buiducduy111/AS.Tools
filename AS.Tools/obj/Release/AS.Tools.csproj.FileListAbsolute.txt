@@ -1,0 +1,11 @@
+D:\Libs\Public\AS.Tools.xml
+D:\Libs\Public\AS.Tools.dll
+D:\Libs\Public\AS.Tools.pdb
+D:\Libs\Projects\AS.Tools\AS.Tools\obj\Release\AS.Tools.csproj.CoreCompileInputs.cache
+D:\Libs\Projects\AS.Tools\AS.Tools\obj\Release\AS.Tools.dll
+D:\Libs\Projects\AS.Tools\AS.Tools\obj\Release\AS.Tools.pdb
+D:\Libs\Projects\AS.Tools\AS.Tools\obj\Release\AS.Tools.csproj.CopyComplete
+D:\Libs\_Shared libs\AS.Tools.xml
+D:\Libs\_Shared libs\AS.Tools.dll
+D:\Libs\_Shared libs\AS.Tools.pdb
+D:\Libs\Projects\AS.Tools\AS.Tools\obj\Release\AS.Tools.csprojAssemblyReference.cache

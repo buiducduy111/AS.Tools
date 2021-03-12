@@ -1,0 +1,14 @@
+D:\Libs\Projects\AS.Tools\AS.Tools\bin\Debug\AS.Tools.dll
+D:\Libs\Projects\AS.Tools\AS.Tools\bin\Debug\AS.Tools.pdb
+D:\Libs\Projects\AS.Tools\AS.Tools\obj\Debug\AS.Tools.csproj.CoreCompileInputs.cache
+D:\Libs\Projects\AS.Tools\AS.Tools\obj\Debug\AS.Tools.dll
+D:\Libs\Projects\AS.Tools\AS.Tools\obj\Debug\AS.Tools.pdb
+D:\Libs\Projects\AS.Tools\AS.Tools\bin\Debug\WebDriver.dll
+D:\Libs\Projects\AS.Tools\AS.Tools\bin\Debug\WebDriver.xml
+D:\Libs\Projects\AS.Tools\AS.Tools\obj\Debug\AS.Tools.csproj.CopyComplete
+D:\Libs\Projects\AS.Tools\AS.Tools\obj\Debug\AS.Tools.csprojAssemblyReference.cache
+D:\Libs\Projects\AS.Tools\AS.Tools\bin\Debug\AWSSDK.Core.dll
+D:\Libs\Projects\AS.Tools\AS.Tools\bin\Debug\AWSSDK.S3.dll
+D:\Libs\Projects\AS.Tools\AS.Tools\bin\Debug\Newtonsoft.Json.dll
+D:\Libs\Projects\AS.Tools\AS.Tools\bin\Debug\AWSSDK.Core.xml
+D:\Libs\Projects\AS.Tools\AS.Tools\bin\Debug\AWSSDK.S3.xml

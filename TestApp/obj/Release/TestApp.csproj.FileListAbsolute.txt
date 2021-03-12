@@ -1,0 +1,13 @@
+D:\Libs\Projects\AS.Tools\TestApp\bin\Release\TestApp.exe.config
+D:\Libs\Projects\AS.Tools\TestApp\bin\Release\TestApp.exe
+D:\Libs\Projects\AS.Tools\TestApp\bin\Release\TestApp.pdb
+D:\Libs\Projects\AS.Tools\TestApp\bin\Release\AS.Tools.dll
+D:\Libs\Projects\AS.Tools\TestApp\bin\Release\AS.Tools.pdb
+D:\Libs\Projects\AS.Tools\TestApp\bin\Release\AS.Tools.xml
+D:\Libs\Projects\AS.Tools\TestApp\obj\Release\TestApp.csprojAssemblyReference.cache
+D:\Libs\Projects\AS.Tools\TestApp\obj\Release\TestApp.csproj.CoreCompileInputs.cache
+D:\Libs\Projects\AS.Tools\TestApp\obj\Release\TestApp.csproj.CopyComplete
+D:\Libs\Projects\AS.Tools\TestApp\obj\Release\TestApp.exe
+D:\Libs\Projects\AS.Tools\TestApp\obj\Release\TestApp.pdb
+D:\Libs\Projects\AS.Tools\TestApp\bin\Release\WebDriver.dll
+D:\Libs\Projects\AS.Tools\TestApp\bin\Release\WebDriver.xml

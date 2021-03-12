@@ -1,0 +1,17 @@
+D:\Libs\Projects\AS.Tools\TestApp\bin\Debug\TestApp.exe.config
+D:\Libs\Projects\AS.Tools\TestApp\bin\Debug\TestApp.exe
+D:\Libs\Projects\AS.Tools\TestApp\bin\Debug\TestApp.pdb
+D:\Libs\Projects\AS.Tools\TestApp\bin\Debug\AS.Tools.dll
+D:\Libs\Projects\AS.Tools\TestApp\bin\Debug\AS.Tools.pdb
+D:\Libs\Projects\AS.Tools\TestApp\obj\Debug\TestApp.csprojAssemblyReference.cache
+D:\Libs\Projects\AS.Tools\TestApp\obj\Debug\TestApp.csproj.CoreCompileInputs.cache
+D:\Libs\Projects\AS.Tools\TestApp\obj\Debug\TestApp.csproj.CopyComplete
+D:\Libs\Projects\AS.Tools\TestApp\obj\Debug\TestApp.exe
+D:\Libs\Projects\AS.Tools\TestApp\obj\Debug\TestApp.pdb
+D:\Libs\Projects\AS.Tools\TestApp\bin\Debug\WebDriver.dll
+D:\Libs\Projects\AS.Tools\TestApp\bin\Debug\WebDriver.xml
+D:\Libs\Projects\AS.Tools\TestApp\bin\Debug\AWSSDK.S3.dll
+D:\Libs\Projects\AS.Tools\TestApp\bin\Debug\AWSSDK.Core.dll
+D:\Libs\Projects\AS.Tools\TestApp\bin\Debug\Newtonsoft.Json.dll
+D:\Libs\Projects\AS.Tools\TestApp\bin\Debug\AWSSDK.S3.xml
+D:\Libs\Projects\AS.Tools\TestApp\bin\Debug\AWSSDK.Core.xml
