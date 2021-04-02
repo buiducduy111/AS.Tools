@@ -45,7 +45,6 @@ namespace AS.Tools
             {
                 string bucketName = _bucketName;
                 string key = Path.GetFileNameWithoutExtension(file).Replace(" ", "+") + "-" + StrHelper.RandomString(5) + Path.GetExtension(file);
-
                 string resultUrl = $"https://{bucketName}.s3.amazonaws.com/{key}";
 
                 var uploadRequest = new TransferUtilityUploadRequest
@@ -71,7 +70,7 @@ namespace AS.Tools
 
                 return resultUrl;
             }
-            catch
+            catch (Exception ex)
             {
                 return null;
             }

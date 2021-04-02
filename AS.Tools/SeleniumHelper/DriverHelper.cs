@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading;
@@ -197,9 +198,10 @@ namespace AS.Tools.SeleniumHelper
         /// Init firefox driver. Return null if init fail
         /// </summary>
         /// <param name="profilePath"></param>
+        /// <param name="binaryLocation">Can null</param>
         /// <param name="msg"></param>
         /// <returns></returns>
-        public static FirefoxDriver InitFirefoxDriver(string profilePath, out string msg)
+        public static FirefoxDriver InitFirefoxDriver(string profilePath, string binaryLocation, out string msg)
         {
             FirefoxDriverService service = FirefoxDriverService.CreateDefaultService();
             service.HideCommandPromptWindow = true;
@@ -211,6 +213,10 @@ namespace AS.Tools.SeleniumHelper
             {
                 FirefoxProfile profile = new FirefoxProfile(profilePath);
                 options.Profile = profile;
+            }
+            if (File.Exists(binaryLocation))
+            {
+                options.BrowserExecutableLocation = binaryLocation;
             }
 
             try

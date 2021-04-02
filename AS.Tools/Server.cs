@@ -9,6 +9,9 @@ using System.Threading.Tasks;
 
 namespace AS.Tools
 {
+    /// <summary>
+    /// Server KEY manager
+    /// </summary>
     public class Server
     {
         private string _key;

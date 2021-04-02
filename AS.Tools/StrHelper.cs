@@ -113,5 +113,30 @@ namespace AS.Tools
 
             return Convert.ToInt32(result);
         }
+
+        /// <summary>
+        /// Get beetween text from startKey and endKey. Return null if not exists
+        /// </summary>
+        /// <param name="html"></param>
+        /// <param name="startKey"></param>
+        /// <param name="endKey"></param>
+        /// <returns></returns>
+        public static string GetBetweenText(string html, string startKey, string endKey)
+        {
+            if (html.IndexOf(startKey) < 0)
+                return null;
+
+            try
+            {
+                int startIndex = html.IndexOf(startKey) + startKey.Length;
+                int endIndex = html.IndexOf(endKey, startIndex);
+
+                return html.Substring(startIndex, endIndex - startIndex);
+            }
+            catch
+            {
+                return null;
+            }
+        }
     }
 }
