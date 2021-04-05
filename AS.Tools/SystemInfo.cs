@@ -19,15 +19,23 @@ namespace AS.Tools
         /// <returns></returns>
         public static string GetCpuID()
         {
-            var mbs = new ManagementObjectSearcher("Select ProcessorId From Win32_processor");
-            ManagementObjectCollection mbsList = mbs.Get();
-            string id = "";
-            foreach (ManagementObject mo in mbsList)
+            try
             {
-                id = mo["ProcessorId"].ToString();
-                break;
+                var mbs = new ManagementObjectSearcher("Select ProcessorId From Win32_processor");
+                ManagementObjectCollection mbsList = mbs.Get();
+                string id = "";
+                foreach (ManagementObject mo in mbsList)
+                {
+                    id = mo["ProcessorId"].ToString();
+                    break;
+                }
+                return id;
             }
-            return id;
+            catch
+            {
+                return "Virtual";
+            }
+            
         }
     }
 }

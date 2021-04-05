@@ -70,7 +70,7 @@ namespace AS.Tools
 
                 return resultUrl;
             }
-            catch (Exception ex)
+            catch
             {
                 return null;
             }
