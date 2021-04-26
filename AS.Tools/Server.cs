@@ -52,9 +52,9 @@ namespace AS.Tools
                 paramFuncs = Convert.ToString(obj.param_funcs);
                 return Convert.ToInt16(obj.status) == 200;
             }
-            catch
+            catch (Exception ex)
             {
-                msg = "Lỗi mạng hoặc không tìm thấy server. Vui lòng thử lại!";
+                msg = "Lỗi mạng hoặc không tìm thấy server. Vui lòng thử lại!\n"+ex.Message;
                 return false;
             }
         }
