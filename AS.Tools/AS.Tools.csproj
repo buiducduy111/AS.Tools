@@ -59,6 +59,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="HttpRequest.cs" />
+    <Compile Include="Logger.cs" />
     <Compile Include="S3Helper.cs" />
     <Compile Include="SeleniumHelper\DriverHelper.cs" />
     <Compile Include="SeleniumHelper\InitOption.cs" />
