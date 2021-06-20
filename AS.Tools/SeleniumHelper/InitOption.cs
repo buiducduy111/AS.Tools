@@ -29,6 +29,11 @@ namespace AS.Tools.SeleniumHelper
         public string BinaryLocation { get; set; }
 
         /// <summary>
+        /// Set user agent
+        /// </summary>
+        public string UserAgent { get; set; }
+
+        /// <summary>
         /// Use headless
         /// </summary>
         public bool Headless { get; set; }
@@ -90,7 +95,11 @@ namespace AS.Tools.SeleniumHelper
             // Hide "Chrome being controll ..." message - real browse
             options.AddArgument("--disable-blink-features");
             options.AddArgument("--disable-blink-features=AutomationControlled");
+            options.AddArgument("start-maximized");
 
+            if (!String.IsNullOrEmpty(this.UserAgent))
+                options.AddArgument($"--user-agent={this.UserAgent}");
+            
             options.AddAdditionalCapability("useAutomationExtension", false);
             options.AddExcludedArgument("enable-automation");
 

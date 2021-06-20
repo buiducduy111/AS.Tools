@@ -14,7 +14,7 @@ namespace AS.Tools
         // Local
         static Random _rand = new Random();
 
-        
+
         /// <summary>
         /// Get allowed file name
         /// </summary>
@@ -80,9 +80,9 @@ namespace AS.Tools
             foreach (string item in spliter)
             {
                 if (String.IsNullOrEmpty(item.Trim())) continue;
-                result.Add((T)Convert.ChangeType(item, typeof(T)));
+                result.Add((T)Convert.ChangeType(item.Trim(), typeof(T)));
             }
-            
+
             return result;
         }
 
@@ -115,6 +115,35 @@ namespace AS.Tools
         }
 
         /// <summary>
+        /// Detect first double from a string. Eg: $39.99abc -> 39.99
+        /// </summary>
+        /// <param name="text"></param>
+        /// <returns></returns>
+        public static double? DoubleDetect(string text)
+        {
+            string result = "";
+            for (int i = 0; i < text.Length; i++)
+            {
+                // Accept 0-9, '.', ',', '-xx' (-1, -2, -3..)
+                if (isInt(text[i].ToString()) || text[i] == '.' || text[i] == ',' ||
+                    (i < text.Length - 1 && text[i] == '-' && isInt(text[i + 1])))
+                {
+                    result += text[i];
+
+                    if (i == text.Length - 1)
+                        return Convert.ToDouble(result);
+                }
+                else
+                {
+                    if (result != "")
+                        return Convert.ToDouble(result.Replace(",", "."));
+                }
+            }
+
+            return null;
+        }
+
+        /// <summary>
         /// Get beetween text from startKey and endKey. Return null if not exists
         /// </summary>
         /// <param name="html"></param>
@@ -138,5 +167,21 @@ namespace AS.Tools
                 return null;
             }
         }
+
+        #region Helpers
+        // Check a string is a int ?
+        private static bool isInt(string s)
+        {
+            int a;
+            return int.TryParse(s, out a);
+        }
+
+        private static bool isInt(char c)
+        {
+            int a;
+            return int.TryParse(c.ToString(), out a);
+        }
+
+        #endregion
     }
 }

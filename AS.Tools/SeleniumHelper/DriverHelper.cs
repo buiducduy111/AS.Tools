@@ -165,6 +165,16 @@ namespace AS.Tools.SeleniumHelper
             js.ExecuteScript("arguments[0].click();", element);
         }
 
+        /// <summary>
+        /// Go to Url by JS
+        /// </summary>
+        /// <param name="url"></param>
+        public void GoToUrlByJs(string url)
+        {
+            IJavaScriptExecutor js = (IJavaScriptExecutor)_driver;
+            js.ExecuteScript($"window.location.href = '{url}'");
+        }
+
         #region Static init / close driver
         /// <summary>
         /// Init chrome session
